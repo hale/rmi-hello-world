@@ -3,6 +3,7 @@ package edu.abdn.cs3517.app;
 import java.rmi.*;
 import java.rmi.server.*;
 import java.net.*;
+import edu.abdn.cs3517.app.ShoutServiceInterface;
 
 public class ShoutServerMainline
 {

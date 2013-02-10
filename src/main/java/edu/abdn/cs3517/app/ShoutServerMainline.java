@@ -17,6 +17,7 @@ public class ShoutServerMainline
       int registryport = Integer.parseInt( args[0] );
       int serviceport = Integer.parseInt( args[1] );
       System.setProperty( "java.security.policy", "rmishout.policy");
+      //System.setProperty"java.rmi.server.codebase", "file:classes/");
       System.setSecurityManager( new RMISecurityManager() );
       ShoutService shoutservice = new ShoutService();
       ShoutServiceInterface shoutstub = (ShoutServiceInterface)UnicastRemoteObject.exportObject( shoutservice, serviceport );
